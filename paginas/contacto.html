@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Rubik:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Contactenos</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="../imagenes/logo.svg" alt="Logotipo de la empresa"/>  
+        <h1>Gestión de tecnologías de la información</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../paginas/productos.html">Productos</a>
+                <ul>
+                    <li><a href="#">Tecnología Intel</a></li>
+                    <li><a href="#">Tecnología AMD</a></li>
+                </ul>
+            </li>
+            <li><a href="../paginas/blog.html">Blog</a></li>
+            <li><a href="../paginas/nosotros.html">Nosotros</a></li>
+            <li><a href="../paginas/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <form action="">
+                <fieldset>
+                    <div class="ingreso">
+                        <label for="nombre">Nombre </label>
+                        <input type="text" name="nombre" placeholder="Nombre y Apellido"/>
+                    </div>
+                    <div class="ingreso">
+                        <label for="email ">Email </label>
+                        <input type="email" name="email" placeholder="Ingrese su email"/>
+                    </div>
+                    <div class="ingreso">
+                        <label for="celular">Celular </label>
+                        <input type="number" name="celular" placeholder="Celular (sin el 15)"/>
+                    </div>
+                    <div class="ingreso">
+                        <label for="cliente">Sos cliente de ITStudio? </label>
+                        <input type="radio" name="cliente" value="Si"/>Sí
+                        <input type="radio" name="cliente" value="No"/>No
+                    </div>
+                    <div class="ingreso">
+                        <label for="newsletter">Desea recibir nuestro newsletter? </label>
+                        <input type="checkbox" name="newsletter"/>
+                    </div>
+                    <div class="ingreso">
+                        <label for="motivo">Motivo</label>
+                        <select name="motivo" id="motivo">
+                            <option value="">Seleccioná el motivo de tu contacto</option>
+                            <option value="Estoy interesado en instalar camaras de video vigilancia">Estoy interesado en instalar cámaras de video vigilancia</option>
+                            <option value="Estoy buscando desarrollar una pagina web">Estoy buscando desarrollar una pagina web</option>
+                            <option value="Necesito solicitar un turno para soporte tecnico de pc o notebooks">Necesito solicitar un turno para soporte técnico de pc o notebooks</option>
+                            <option value="Quiero realizar la compra de un equipo">Quiero realizar la compra de un equipo</option>
+                        </select>
+                    </div>
+                    <div class="ingreso">
+                        <textarea name="mensaje" id="" cols="60" rows="10" placeholder="Tu mensaje"></textarea>
+                    </div>
+                    <div class="buttons">
+                     <input type="reset" value="Limpiar datos"/>
+                     <input type="submit" value="Enviar"/>
+                    </div>                  
+                 </fieldset>    
+             </form>
+         </section>
+    </main>
+    <footer>
+        <span>Copyright &copy;  IT Studio 2020. Todos los derechos reservados.</span>
+        <span>info@itstudio.ar</span>
+        <img class="icono" src="../imagenes/twitter.png" alt="Logotipo red social twitter"/>
+        <img class="icono" src="../imagenes/instagram.png" alt="Logotipo red social instagram"/>
+    </footer>
+</body>
+</html>

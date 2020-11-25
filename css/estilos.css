@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+main{
+    margin: 1rem 1rem;
+}
+
+#logo {
+    margin-top: 7rem;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    width: 100%;
+}
+
+section video {
+    height: 100vh;
+    width: inherit;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#columnas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#columnas div img {
+    width: 100%;
+}
+
+.titulosParrafos {
+    color: rgb(241, 226, 4);
+    background-color: rgb(0, 194, 120);
+    text-align: center;
+    border-radius: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin: 1rem 2rem 1rem 2rem;
+}
+
+#aside {
+    margin: 0 0;
+    width: 50%;
+    color: rgb(241, 226, 4);
+    background-color: rgb(0, 194, 120);
+    text-align: center;
+    border-radius: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+#aside p {
+    text-align: justify;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+}
+
+article h2 {
+    padding-left: 0.5rem;
+}
+
+article {
+    text-align: left;
+    margin-left: 1rem;  
+}
+
+
+.separador {
+        width: 0%;
+        min-width: 20%;
+        max-width: 100%;
+        margin: 0 auto;
+        border: none;
+        border-bottom: 0.13rem solid #bada55;
+        position: relative;
+}
+
+.navbar {
+    height: 7vh;
+    color: yellowgreen;
+    background-color: #E0E0E0;
+    font-size: 1.3rem;
+    border: solid 0.1rem black;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 2rem;
+    margin-right: 2rem; 
+}
+
+li {
+    display: inline-block;
+    position: relative;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+    width: 12.5rem;
+    background-color: rgb(122, 122, 118);
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+}
+
+ul li:hover ul {
+    display: block;
+}
+/* --------------------- Estilo de Grilla en Productos --------------------- */
+section#gridTablas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px auto 1fr auto;
+    grid-template-areas: "titulo titulo"
+                         "img1 img2"
+                         "tabla1 tabla2"
+                         "publicidad publicidad";
+    grid-column-gap: 0.3rem;
+    grid-row-gap: 0.7rem;
+}
+
+.titulosParrafos {
+    grid-area: titulo;
+    margin: 0;
+}
+
+#producto1 {
+    grid-area: img1;
+    justify-self: center;
+}
+
+#producto2 {
+    grid-area: img2;
+    justify-self: center;
+}
+
+#especs1 {
+    grid-area: tabla1;
+}
+
+#especs2 {
+    grid-area: tabla2;
+}
+
+#bannerPublicitario {
+    grid-area: publicidad;
+    margin: 0;
+}
+
+table, tr, td {
+    border: 0.1rem solid black;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgb(122, 122, 129);
+    color: yellow;
+    border: rgb(122, 122, 129);
+}
+
+td {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: justify;
+}
+/* --------------------- Inicio de diseño Mobile First --------------------- */
+@media screen and (max-width:768px) {
+    section#gridTablas {
+        grid-template-columns: 1fr;
+        grid-template-areas: "titulo"
+                             "img1"
+                             "tabla1"
+                             "img2"
+                             "tabla2"
+                             "publicidad";
+        grid-column-gap: 0.3rem;
+        grid-row-gap: 0.7rem;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    section#gridTablas {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 40px auto 1fr;
+        grid-template-areas: "titulo titulo publicidad"
+                             "img1 img2 publicidad"
+                             "tabla1 tabla2 publicidad";
+        grid-column-gap: 0.3rem;
+        grid-row-gap: 0.7rem;
+        
+    }
+}
+
+ol li {
+    display: block;
+    color: magenta;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+fieldset {
+    margin-top: 1rem;
+    background-color: black;
+    border: none;
+    border-radius: 0.8rem;
+    width: 65vh;
+    color: white;
+}
+
+.ingreso {
+    display: block;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+#motivo {
+    font-size: 1rem;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.buttons input {
+    font-size: 1rem;
+    width: 12.5rem;
+}
+
+#equipoTrabajo {
+    text-align: center;
+}
+
+footer {
+    border-top: 0.15rem solid black;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: linear-gradient(to bottom, #767676, #EEEEEE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono {
+    padding: 0rem 0.5rem;
+    width: 2.5rem
+}
+
+footer span {
+    padding: 1.5rem 1rem;
+    align-items: baseline;
+}
